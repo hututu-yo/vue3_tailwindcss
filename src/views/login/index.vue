@@ -4,7 +4,7 @@
  * @Autor: tu
  * @Date: 2023-04-06 17:16:17
  * @LastEditors: tu
- * @LastEditTime: 2023-07-08 10:26:25
+ * @LastEditTime: 2023-07-12 11:52:46
  * @FilePath: /vue3_tailwindcss/src/views/login/index.vue
 -->
 <template>
@@ -36,7 +36,12 @@ const loginApi = () => {
 }
 
 const login = async () => {
-  // const { data } = await loginApi.login({ data: { WeChat_id: "PWD" } })
+  // const { data } = await loginApi.login({
+  //   data: { WeChat_id: "PWD" }, failHook: (e: any) => {
+  //     console.log('e: ', e);
+  //   }
+  // })
+  const { data } = await loginApi()
 
   user.setToken('data.data', true)
   let routes = await user.getUserInfo()

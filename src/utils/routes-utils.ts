@@ -15,6 +15,12 @@
  */
 import type { IRouteRecordRaw } from '@/types/modules/router'
 
+/**
+ * @description:  获取动态路由
+ * @param {IRouteRecordRaw[]} RoutsMap 路由配置
+ * @param {Array<string>} authPermissionMenuCodeVm 权限菜单编码
+ * @return {IRouteRecordRaw[]} 路由配置
+ */
 export const getRoutes = (
   RoutsMap: IRouteRecordRaw[],
   authPermissionMenuCodeVm: Array<string> = []

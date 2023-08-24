@@ -196,6 +196,7 @@ declare global {
   const useKeyModifier: typeof import('@vueuse/core')['useKeyModifier']
   const useLastChanged: typeof import('@vueuse/core')['useLastChanged']
   const useLink: typeof import('vue-router')['useLink']
+  const useLocalCache: typeof import('./src/hooks/local-cache')['useLocalCache']
   const useLocalCacheRef: typeof import('./src/utils/custom-ref')['useLocalCacheRef']
   const useLocalStorage: typeof import('@vueuse/core')['useLocalStorage']
   const useMagicKeys: typeof import('@vueuse/core')['useMagicKeys']

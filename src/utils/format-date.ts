@@ -22,8 +22,8 @@ function addZero(v: number, size: number) {
 
 /**
  * @description: 格式化时间
- * @param {string} formatter 格式化字符串
- * @return {*} 格式化后的时间
+ * @param {string} formatter 格式化字符串 
+ * @return {string} 格式化后的时间
  */
 const _formatNormalize = (formatter: string | Function) => {
   if (formatter instanceof Function) {
@@ -51,11 +51,12 @@ const _formatNormalize = (formatter: string | Function) => {
     return str
   }
 }
+
 /**
- * js 时间戳的转换（自定义格式）
- * @param  data [创建 Date 对象]
- * @param  formatStr [日期格式]
- * @return (string) 日期时间
+ * @description:  格式化时间
+ * @param {Date | string} data  时间
+ * @param {string} formatStr 格式化字符串
+ * @return {string} 格式化后的时间
  */
 export const formatDate = (data: Date | string, formatStr: string) => {
   // let format = _formatNormalize(formatStr)

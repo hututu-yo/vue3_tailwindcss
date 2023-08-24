@@ -4,10 +4,10 @@
  * @Autor: tu
  * @Date: 2022-11-03 14:44:34
  * @LastEditors: tu
- * @LastEditTime: 2023-04-14 11:37:03
+ * @LastEditTime: 2023-08-22 14:49:48
  * @FilePath: /vue3_tailwindcss/src/libs/config.ts
  */
-export interface Urlmapconfig {
+export interface UrlMapConfig {
   /**
    * 服务器环境地址 dev  [ server environment address dev ]
    */
@@ -22,21 +22,21 @@ export interface Urlmapconfig {
   prod: string
 }
 
-const { VITE_APP_ENV }: { VITE_APP_ENV: 'dev' | 'sit' | 'prod' } = import.meta.env
+const { VITE_APP_ENV }: { VITE_APP_ENV: keyof UrlMapConfig } = import.meta.env
 
-const SERVICE_URL_MAP: Urlmapconfig = {
+const SERVICE_URL_MAP: UrlMapConfig = {
   dev: 'http://127.0.0.1:3007',
   sit: 'http://data.houkoc.com',
   prod: 'http://data.houkoc.com'
 }
 
-const BFF_URL_MAP: Urlmapconfig = {
+const BFF_URL_MAP: UrlMapConfig = {
   dev: 'http://127.0.0.1:3007',
   sit: 'http://data.houkoc.com',
   prod: 'http://data.houkoc.com'
 }
 
-const DOMAIN_URL_MAP: Urlmapconfig = {
+const DOMAIN_URL_MAP: UrlMapConfig = {
   dev: 'http://127.0.0.1:3007',
   sit: 'http://data.houkoc.com',
   prod: 'http://data.houkoc.com'

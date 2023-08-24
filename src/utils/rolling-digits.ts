@@ -4,7 +4,7 @@
  * @Autor: tu
  * @Date: 2023-05-17 17:13:38
  * @LastEditors: tu
- * @LastEditTime: 2023-06-29 10:28:15
+ * @LastEditTime: 2023-07-12 11:43:25
  * @FilePath: /vue3_tailwindcss/src/utils/rolling-digits.ts
  */
 /**
@@ -17,10 +17,25 @@
  * @return {number}  value  当前值
  */
 export const rollingDigits = (
+  /**
+   *  持续时间 ms
+   */
   duration: number,
+  /**
+   *  目标值
+   */
   to: number,
+  /**
+   * 起始值
+   */
   from: number,
+  /**
+   * 回调函数  value: 当前值  timer: 定时器  remaining: 剩余时间
+   */
   callback: (value: number, timer: number, remaining: number) => void,
+  /**
+   * 完成回调函数
+   */
   complete?: () => void
 ) => {
   let timer: null | number = null

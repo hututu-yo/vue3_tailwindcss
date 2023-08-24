@@ -4,13 +4,13 @@
  * @Autor: tu
  * @Date: 2023-06-24 17:06:51
  * @LastEditors: tu
- * @LastEditTime: 2023-06-28 09:46:22
+ * @LastEditTime: 2023-07-12 11:48:27
  * @FilePath: /vue3_tailwindcss/src/utils/version.ts
  */
 /**
  * @description: 版本号自增
  * @param {string} version 版本号
- * @return {*} 版本号
+ * @return {string} 版本号
  */
 export const incrementVersion = (version: string) => {
   const parts = version.split('.')
