@@ -4,7 +4,7 @@
  * @Autor: tu
  * @Date: 2022-11-14 15:02:17
  * @LastEditors: tu
- * @LastEditTime: 2023-09-01 15:36:52
+ * @LastEditTime: 2023-09-01 15:56:53
  * @FilePath: /vue3_tailwindcss/src/utils/index.ts
  */
 /**
@@ -63,6 +63,6 @@ export function objectEmptyFilter(obj: IObject): IObject {
  * @return {*}
  */
 export const optionsLabelGetter = <T extends Record<string, any>, K extends keyof T>(options: T[], value: any, key: K = 'value' as K, k: K = 'value' as K): any => {
-  const option = options.find((u: T) => u[key] == value)
+  const option = options.find((u: T) => u[key] === value)
   return option ? option[k] : ''
 }
