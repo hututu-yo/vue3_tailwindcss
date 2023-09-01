@@ -4,7 +4,7 @@
  * @Autor: tu
  * @Date: 2022-11-14 15:02:17
  * @LastEditors: tu
- * @LastEditTime: 2023-06-28 09:18:34
+ * @LastEditTime: 2023-09-01 15:36:52
  * @FilePath: /vue3_tailwindcss/src/utils/index.ts
  */
 /**
@@ -52,4 +52,17 @@ export function objectEmptyFilter(obj: IObject): IObject {
     }
   })
   return result
+}
+
+/**
+ * @description:  获取选项label 
+ * @param {T extends Record<string, any>} options 选项
+ * @param {any} value 选项值
+ * @param {K extends keyof T} key 选项key
+ * @param {K extends keyof T} k 选项label
+ * @return {*}
+ */
+export const optionsLabelGetter = <T extends Record<string, any>, K extends keyof T>(options: T[], value: any, key: K = 'value' as K, k: K = 'value' as K): any => {
+  const option = options.find((u: T) => u[key] == value)
+  return option ? option[k] : ''
 }

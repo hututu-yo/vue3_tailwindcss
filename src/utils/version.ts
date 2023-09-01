@@ -4,7 +4,7 @@
  * @Autor: tu
  * @Date: 2023-06-24 17:06:51
  * @LastEditors: tu
- * @LastEditTime: 2023-07-12 11:48:27
+ * @LastEditTime: 2023-09-01 15:50:36
  * @FilePath: /vue3_tailwindcss/src/utils/version.ts
  */
 /**
@@ -12,7 +12,7 @@
  * @param {string} version 版本号
  * @return {string} 版本号
  */
-export const incrementVersion = (version: string) => {
+export const incrementVersion = (version: string): string => {
   const parts = version.split('.')
   const lastPart = parseInt(parts[2])
   if (lastPart === 9) {

@@ -46,19 +46,19 @@ const DOMAIN_URL_MAP: UrlMapConfig = {
  * 前端服务链接前缀
  * @type {string}
  */
-const serviceURL = `${SERVICE_URL_MAP[VITE_APP_ENV]}`
+const serviceURL: string = `${SERVICE_URL_MAP[VITE_APP_ENV]}`
 
 /**
  * BFF接口链接前缀
  * @type {string}
  */
-const bffServiceURL = `${BFF_URL_MAP[VITE_APP_ENV]}/bff-admin`
+const bffServiceURL: string = `${BFF_URL_MAP[VITE_APP_ENV]}/bff-admin`
 
 /**
  * 域接口链接前缀
  * @type {string}
  */
-const domainServiceURL = `${DOMAIN_URL_MAP[VITE_APP_ENV]}`
+const domainServiceURL: string = `${DOMAIN_URL_MAP[VITE_APP_ENV]}`
 
 export default {
   serviceURL,

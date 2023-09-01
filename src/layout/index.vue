@@ -4,7 +4,7 @@
  * @Autor: tu
  * @Date: 2023-04-10 13:51:54
  * @LastEditors: tu
- * @LastEditTime: 2023-06-28 10:08:21
+ * @LastEditTime: 2023-09-01 15:52:30
  * @FilePath: /vue3_tailwindcss/src/layout/index.vue
 -->
 <template>
@@ -12,7 +12,7 @@
     <el-container>
       <el-aside :width="isCollapse ? '64px' : '208px'">
         <div class="links" :style="isCollapse ? 'width: 64px;' : ''">
-          <img :src="imagesFileObj.logoPng" class="logo-img" />
+          <img :src="imagesFileObj.pngLogoPng" class="logo-img" />
           <span v-show="!isCollapse" class="title-text">危象报警管理系统</span>
         </div>
         <Aside :isCollapse="isCollapse"></Aside>

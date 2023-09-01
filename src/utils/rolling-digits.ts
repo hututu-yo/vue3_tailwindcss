@@ -4,7 +4,7 @@
  * @Autor: tu
  * @Date: 2023-05-17 17:13:38
  * @LastEditors: tu
- * @LastEditTime: 2023-07-12 11:43:25
+ * @LastEditTime: 2023-08-24 16:13:23
  * @FilePath: /vue3_tailwindcss/src/utils/rolling-digits.ts
  */
 /**
@@ -37,7 +37,7 @@ export const rollingDigits = (
    * 完成回调函数
    */
   complete?: () => void
-) => {
+): void => {
   let timer: null | number = null
   const difference = to - from // 总差值
   const perTick = difference / duration // 每一帧的差值

@@ -4,7 +4,7 @@
  * @Autor: tu
  * @Date: 2023-04-10 13:44:05
  * @LastEditors: tu
- * @LastEditTime: 2023-06-08 15:37:49
+ * @LastEditTime: 2023-09-01 15:52:09
  * @FilePath: /vue3_tailwindcss/src/router/routes.ts
  */
 // const Layout = () => import('@/layout/index.vue')
