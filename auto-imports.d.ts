@@ -78,6 +78,7 @@ declare global {
   const onStartTyping: typeof import('@vueuse/core')['onStartTyping']
   const onUnmounted: typeof import('vue')['onUnmounted']
   const onUpdated: typeof import('vue')['onUpdated']
+  const optionsLabelGetter: typeof import('./src/utils/index')['optionsLabelGetter']
   const pageStore: typeof import('./src/stores/page')['pageStore']
   const pausableWatch: typeof import('@vueuse/core')['pausableWatch']
   const provide: typeof import('vue')['provide']

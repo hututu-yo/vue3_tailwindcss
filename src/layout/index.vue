@@ -35,7 +35,6 @@ import imagesFileObj from '@/assets/images'
 import Header from './header.vue'
 import Aside from './aside.vue'
 import Page from './page.vue'
-console.log('imagesFileObj: ', imagesFileObj);
 
 
 const isCollapse = useLocalCacheRef('isCollapse', false)

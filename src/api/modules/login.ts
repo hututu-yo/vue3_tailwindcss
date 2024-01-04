@@ -8,7 +8,7 @@
  * @FilePath: /vue3_tailwindcss/src/api/modules/login.ts
  */
 import { requestCreator } from '../request'
-import type { ApiOptions, RequestCreator, ArrayElementType } from '@/types/modules/request'
+// import type { ApiOptions, RequestCreator, ArrayElementType } from '@/types/modules/request'
 
 import config from '../../libs/config'
 
