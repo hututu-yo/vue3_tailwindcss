@@ -4,7 +4,7 @@
  * @Autor: tu
  * @Date: 2023-04-10 13:44:05
  * @LastEditors: tu
- * @LastEditTime: 2023-09-01 15:52:09
+ * @LastEditTime: 2024-01-04 14:48:22
  * @FilePath: /vue3_tailwindcss/src/router/routes.ts
  */
 // const Layout = () => import('@/layout/index.vue')
@@ -46,6 +46,18 @@ const RoutsMap: IRouteRecordRaw[] = [
       keepAlive: true
     },
     children: []
+  },
+  {
+    path: '/print',
+    name: 'Print',
+    component: () => import('@/views/print/print.vue'),
+    meta: {
+      title: '打印',
+      icon: '',
+      invisible: false,
+      permissions: '',
+      keepAlive: true
+    },
   },
   {
     path: '/product-configuration',
